@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Wishes - Best Friend</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: "Segoe UI", sans-serif;
+            background: linear-gradient(135deg, #12002f, #4b006e, #ff4f81);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .card {
+            width: 90%;
+            max-width: 700px;
+            padding: 45px 35px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.12);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 30px;
+            box-shadow: 0 0 40px rgba(255, 105, 180, 0.5);
+            backdrop-filter: blur(10px);
+            position: relative;
+            z-index: 2;
+        }
+
+        h1 {
+            font-size: 45px;
+            margin: 10px 0;
+            color: #ffd700;
+            text-shadow: 0 0 15px #ff69b4;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin: 10px 0 25px;
+        }
+
+        .balloons {
+            font-size: 45px;
+            margin-bottom: 15px;
+            animation: float 2s ease-in-out infinite;
+        }
+
+        .fireworks {
+            font-size: 38px;
+            margin: 20px 0;
+            animation: sparkle 1.5s infinite alternate;
+        }
+
+        .note {
+            font-size: 18px;
+            line-height: 1.8;
+            margin: 20px auto;
+            max-width: 580px;
+        }
+
+        .highlight {
+            color: #ffd700;
+            font-weight: bold;
+        }
+
+        .footer {
+            margin-top: 25px;
+            font-size: 22px;
+            font-weight: bold;
+            color: #ffb6c1;
+        }
+
+        .balloon {
+            position: fixed;
+            bottom: -100px;
+            font-size: 55px;
+            animation: rise 8s linear infinite;
+            z-index: 1;
+        }
+
+        .b1 {
+            left: 5%;
+            animation-delay: 0s;
+        }
+
+        .b2 {
+            left: 20%;
+            animation-delay: 2s;
+        }
+
+        .b3 {
+            left: 75%;
+            animation-delay: 1s;
+        }
+
+        .b4 {
+            left: 90%;
+            animation-delay: 4s;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-12px);
+            }
+        }
+
+        @keyframes sparkle {
+            from {
+                transform: scale(1);
+                opacity: 0.7;
+            }
+
+            to {
+                transform: scale(1.15);
+                opacity: 1;
+            }
+        }
+
+        @keyframes rise {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0;
+            }
+
+            15% {
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(-120vh) rotate(20deg);
+                opacity: 0;
+            }
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 34px;
+            }
+
+            h2 {
+                font-size: 23px;
+            }
+
+            .note {
+                font-size: 16px;
+            }
+
+            .card {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="balloon b1">🎈</div>
+    <div class="balloon b2">🎈</div>
+    <div class="balloon b3">🎈</div>
+    <div class="balloon b4">🎈</div>
+
+    <div class="card">
+
+        <div class="balloons">🎈 🎈 🎈 🎈 🎈</div>
+
+        <div class="fireworks">🎆 ✨ 🎇 ✨ 🎆</div>
+
+        <h1>HAPPY BIRTHDAY!</h1>
+
+        <h2>To My Best Friend ❤️</h2>
+
+        <div class="fireworks">🎇 🎉 🎆 🎉 🎇</div>
+
+        <p class="note">
+            Happy Birthday to my amazing best friend! 🥳❤️
+            <br><br>
+
+            Thank you for always being there, for all the laughter,
+            unforgettable memories, crazy moments, and endless conversations.
+            I am truly lucky to have a friend like you in my life.
+            <br><br>
+
+            May your special day be filled with
+            <span class="highlight">happiness, love, success, and beautiful memories</span>.
+            May all your dreams come true and may every new year of your life
+            bring you more reasons to smile.
+            <br><br>
+
+            Keep smiling, keep shining, and always stay the wonderful person
+            you are. No matter where life takes us, our friendship will always
+            be special to me. ❤️
+        </p>
+
+        <div class="fireworks">🎆 🎆 🎆</div>
+
+        <div class="footer">
+            🎂 Happy Birthday, Best Friend! 🎁<br>
+            Have an amazing day! ❤️
+        </div>
+
+        <div class="balloons">🎈 🎈 🎈 🎈 🎈</div>
+
+    </div>
+
+</body>
+
+</html>
